@@ -6,28 +6,38 @@
 #include "memlayout.h"
 #include "mmu.h"
 #include "proc.h"
+#include "spinlock.h"
+
+int readcount = 0;
+
+extern struct {
+  struct spinlock lock;
+  struct proc proc[NPROC];
+} ptable;
 
 int sys_getpinfo(void) {
-  struct pinfo *ptable;
-  if (argptr(0, (char**)&ptable, sizeof(*ptable)) < 0)
+  struct pinfo *user_pinfo;
+  if (argptr(0, (char**)&user_pinfo, sizeof(struct pinfo)) < 0)
     return -1;
 
   struct proc *p;
   int i = 0;
-  acquire(&ptable->lock);
-  for(p = ptable->proc; p < &ptable->proc[NPROC]; p++){
+  acquire(&ptable.lock);
+  for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
     if(p->state != UNUSED){
-      ptable->pid[i] = p->pid;
-      ptable->mem[i] = p->sz;
-      safestrcpy(ptable->name[i], p->name, sizeof(p->name));
+      user_pinfo->pid[i] = p->pid;
+      user_pinfo->mem[i] = p->sz;
+      safestrcpy(user_pinfo->name[i], p->name, sizeof(p->name));
       i++;
     }
   }
-  release(&ptable_lock);
+  release(&ptable.lock);
   return 0;
 }
 
-int readcount = 0;
+int sys_getreadcount(void) {
+  return readcount;
+}
 
 int
 sys_fork(void)
@@ -110,8 +120,4 @@ sys_uptime(void)
   xticks = ticks;
   release(&tickslock);
   return xticks;
-}
-
-int sys_getreadcount(void) {
-  return readcount;
 }
