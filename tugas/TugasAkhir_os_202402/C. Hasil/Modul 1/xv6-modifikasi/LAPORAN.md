@@ -54,13 +54,12 @@ Read Count Sebelum: 12
 screenshot:
 
 ### 📍 Output `ptest`:
-![hasil ptest](<img width="1918" height="1079" alt="Screenshot 2025-07-28 194745" src="https://github.com/user-attachments/assets/cc884a43-f788-4f7e-ac21-84ab99ed477f" />
+![hasil ptest](img width="1918" height="1079" alt="Screenshot 2025-07-28 194745" src="https://github.com/user-attachments/assets/cc884a43-f788-4f7e-ac21-84ab99ed477f" />
 )
-```
+
 ### 📍 Output `rtest`:
-![hasil rtest](<img width="1919" height="1079" alt="Screenshot 2025-07-28 194909" src="https://github.com/user-attachments/assets/3a34899c-d0bf-4cd1-8116-d2af685e0403" />
+![hasil rtest](<img width="1919" height="1079" alt="Screenshot 2025-07-28 194909" src="https://github.com/user-attachments/assets/83a92bdf-6cdf-4e70-b71b-5f999443bbb6" />
 )
-```
 
 ## ⚠️ Kendala yang Dihadapi
 
