@@ -14,8 +14,8 @@ int sys_getpinfo(void) {
 
   struct proc *p;
   int i = 0;
-  acquire(&ptable.lock);
-  for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
+  acquire(&ptable->lock);
+  for(p = ptable->proc; p < &ptable->proc[NPROC]; p++){
     if(p->state != UNUSED){
       ptable->pid[i] = p->pid;
       ptable->mem[i] = p->sz;
@@ -23,7 +23,7 @@ int sys_getpinfo(void) {
       i++;
     }
   }
-  release(&ptable.lock);
+  release(&ptable_lock);
   return 0;
 }
 
