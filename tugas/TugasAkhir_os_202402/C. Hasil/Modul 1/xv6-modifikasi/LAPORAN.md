@@ -2,8 +2,8 @@
 
 **Mata Kuliah**: Sistem Operasi
 **Semester**: Genap / Tahun Ajaran 2024–2025
-**Nama**: `<Nama Lengkap>`
-**NIM**: `<Nomor Induk Mahasiswa>`
+**Nama**: `<Dysar Adnant Ilham Nur Asnawi>`
+**NIM**: `<240202907>`
 **Modul yang Dikerjakan**:
 `(Contoh: Modul 1 – System Call dan Instrumentasi Kernel)`
 
@@ -19,10 +19,6 @@ Tuliskan deskripsi singkat dari modul yang Anda kerjakan. Misalnya:
 
 ## 🛠️ Rincian Implementasi
 
-Tuliskan secara ringkas namun jelas apa yang Anda lakukan:
-
-### Contoh untuk Modul 1:
-
 * Menambahkan dua system call baru di file `sysproc.c` dan `syscall.c`
 * Mengedit `user.h`, `usys.S`, dan `syscall.h` untuk mendaftarkan syscall
 * Menambahkan struktur `struct pinfo` di `proc.h`
@@ -32,56 +28,42 @@ Tuliskan secara ringkas namun jelas apa yang Anda lakukan:
 
 ## ✅ Uji Fungsionalitas
 
-Tuliskan program uji apa saja yang Anda gunakan, misalnya:
-
 * `ptest`: untuk menguji `getpinfo()`
 * `rtest`: untuk menguji `getReadCount()`
-* `cowtest`: untuk menguji fork dengan Copy-on-Write
-* `shmtest`: untuk menguji `shmget()` dan `shmrelease()`
-* `chmodtest`: untuk memastikan file `read-only` tidak bisa ditulis
-* `audit`: untuk melihat isi log system call (jika dijalankan oleh PID 1)
-
 ---
 
 ## 📷 Hasil Uji
 
-Lampirkan hasil uji berupa screenshot atau output terminal. Contoh:
+Lampiran hasil uji berupa screenshot atau output terminal :
 
-### 📍 Contoh Output `cowtest`:
-
-```
-Child sees: Y
-Parent sees: X
-```
-
-### 📍 Contoh Output `shmtest`:
+### 📍 Output `ptest`:
 
 ```
-Child reads: A
-Parent reads: B
+PID     MEM     NAME
+1       12288   init
+2       16384   sh
+5       12288   ptest
 ```
 
-### 📍 Contoh Output `chmodtest`:
+### 📍 Output `rtest`:
 
 ```
-Write blocked as expected
+Read Count Sebelum: 12
 ```
 
-Jika ada screenshot:
+screenshot:
 
 ```
-![hasil cowtest](./screenshots/cowtest_output.png)
+![hasil ptest](<img width="1918" height="1079" alt="Screenshot 2025-07-28 194745" src="https://github.com/user-attachments/assets/cc884a43-f788-4f7e-ac21-84ab99ed477f" />
+)
 ```
-
----
+![hasil rtest](<img width="1919" height="1079" alt="Screenshot 2025-07-28 194909" src="https://github.com/user-attachments/assets/3a34899c-d0bf-4cd1-8116-d2af685e0403" />
+)
+```
 
 ## ⚠️ Kendala yang Dihadapi
 
-Tuliskan kendala (jika ada), misalnya:
-
-* Salah implementasi `page fault` menyebabkan panic
-* Salah memetakan alamat shared memory ke USERTOP
-* Proses biasa bisa akses audit log (belum ada validasi PID)
+Tuliskan kendala (jika ada),
 
 ---
 
