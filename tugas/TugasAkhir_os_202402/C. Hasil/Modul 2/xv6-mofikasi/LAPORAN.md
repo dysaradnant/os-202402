@@ -6,7 +6,7 @@
 **Nama**: `<Dysar Adnant Ilham Nur Asnawi>`
 **NIM**: `<240202907>`
 **Modul yang Dikerjakan**:
-`(Contoh: Modul 2 – System Call dan Instrumentasi Kernel)`
+`(Modul 2 – System Call dan Instrumentasi Kernel)`
 
 ---
 
