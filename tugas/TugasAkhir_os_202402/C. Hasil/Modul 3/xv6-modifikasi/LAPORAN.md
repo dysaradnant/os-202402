@@ -70,10 +70,12 @@ Parent reads: P
 screenshot:
 
 ### 📍 Output `cowtest`:
-![hasil cowtest](<img width="1919" height="1079" alt="Screenshot 2025-08-01 101055" src="https://github.com/user-attachments/assets/c4060ea8-adc1-4a95-840a-036bad09101b" />)
+![hasil cowtest](<img width="1919" height="1079" alt="Screenshot 2025-08-01 101055" src="https://github.com/user-attachments/assets/4dea4e1a-d587-436f-8a7d-4582e0f59898" />
+)
 
 ### 📍 Output `shmtest`:
-![hasil shmtest](<img width="1919" height="1079" alt="Screenshot 2025-08-01 100703" src="https://github.com/user-attachments/assets/d388351d-400a-4e65-b5a7-d115328171d8" />
+![hasil shmtest](<img width="1919" height="1079" alt="Screenshot 2025-08-01 100703" src="https://github.com/user-attachments/assets/d7b42f80-0493-45fb-bd8a-22d12a4d8804" />
+>
 )
 
 ## ⚠️ Kendala yang Dihadapi
