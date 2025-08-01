@@ -39,6 +39,7 @@ Lampiran hasil uji berupa screenshot atau output terminal :
 ### 📍 Output `ptest`:
 
 ```
+$ ptest
 PID     MEM     NAME
 1       12288   init
 2       16384   sh
@@ -48,19 +49,18 @@ PID     MEM     NAME
 ### 📍 Output `rtest`:
 
 ```
+$ rtest
 Read Count Sebelum: 12
 ```
 
 screenshot:
 
 ### 📍 Output `ptest`:
-![hasil ptest](img width="1918" height="1079" alt="Screenshot 2025-07-28 194745" src="https://github.com/user-attachments/assets/cc884a43-f788-4f7e-ac21-84ab99ed477f" />
-)
-
+<img width="1918" height="1079" alt="Screenshot 2025-07-28 194745" src="https://github.com/user-attachments/assets/0db6c689-4821-4fe3-9004-a326b3c94d18" />
 
 ### 📍 Output `rtest`:
-![hasil rtest](img width="1919" height="1079" alt="Screenshot 2025-07-28 194909" src="https://github.com/user-attachments/assets/83a92bdf-6cdf-4e70-b71b-5f999443bbb6" />
-)
+<img width="1919" height="1079" alt="Screenshot 2025-07-28 194909" src="https://github.com/user-attachments/assets/61aee24f-fb96-4362-a9a9-2db5a82be0a4" />
+
 
 ## ⚠️ Kendala yang Dihadapi
 
