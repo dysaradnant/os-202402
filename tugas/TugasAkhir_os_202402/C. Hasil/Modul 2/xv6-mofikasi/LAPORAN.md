@@ -34,11 +34,7 @@ Mengubah algoritma penjadwalan proses di xv6-public dari Round Robin menjadi Non
 
 ## ✅ Uji Fungsionalitas
 
-* `ptest`:
-* Membuktikan bahwa kernel menjalankan proses berdasarkan prioritas
-* Memastikan scheduler bekerja secara non-preemptive, artinya:
-    *Setelah satu proses jalan, proses lain harus menunggu sampai yang sedang jalan selesai.
-    *Tidak ada pengambilan paksa CPU.
+* `ptest`: untuk menguji child berjalan berdasarkan prioritas
 ---
 
 ## 📷 Hasil Uji
@@ -56,9 +52,7 @@ Parent selesai
 screenshot:
 
 ### 📍 Output `ptest`:
-![hasil ptest](<img width="1919" height="1079" alt="Screenshot 2025-07-29 063429" src="https://github.com/user-attachments/assets/89a9815d-c59b-424b-9b50-e5534a7fe5d6" />
-
-)
+<img width="1919" height="1079" alt="Screenshot 2025-07-29 063429" src="https://github.com/user-attachments/assets/89a9815d-c59b-424b-9b50-e5534a7fe5d6" />
 
 ## ⚠️ Kendala yang Dihadapi
 
